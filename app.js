@@ -17,7 +17,7 @@ app.use(express.static("public"));
 // Rotas
 app.use('/', panelController);
 
-const port = port = process.env.PORT || 3000;
+const port = port = 3000;
 app.listen(port, function(){
 	console.log(`Servidor Online em http://localhost:${port}`);
 });
