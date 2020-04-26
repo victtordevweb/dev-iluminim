@@ -4,6 +4,16 @@ body{
     color: #3f3849;
 }
 
+
+/* HOME */
+body.home .container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+/* SCHEDULE PAGE */
+
 body.schedule .container {
     display: flex;
     height: 100vh;
