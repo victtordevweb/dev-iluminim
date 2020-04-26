@@ -17,6 +17,11 @@ app.use(express.static("public"));
 // Rotas
 app.use('/', panelController);
 
+// Rota inicial
+app.get('/', (req, res)=>{
+    res.render('index', {className: 'home'});
+});
+
 const port = 3000;
 app.listen(port, function(){
 	console.log(`Servidor Online em http://localhost:${port}`);
