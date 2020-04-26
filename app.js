@@ -1,16 +1,21 @@
 const express = require('express');
-const consign = require('consign');
 const cors = require('cors');
+const panelController = require('./panel/PanelController');
 
+// Define APP
 const app = express();
-
 
 app.use(express.json());
 app.use(cors());
 
+// View Engine
+app.set('view engine', 'ejs');
+
+// Static Files
+app.use(express.static("public"));
 
 // Rotas
-consign().include('routes').into(app);
+app.use('/', panelController);
 
 const port = 5051;
 app.listen(port, function(){
