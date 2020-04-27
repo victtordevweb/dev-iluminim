@@ -4,20 +4,32 @@ body{
     color: #3f3849;
 }
 
+.color-primary{
+    color: #d80417
+}
+
 
 /* HOME */
-body.home .container {
+body.home main{
     display: flex;
     height: 100vh;
     align-items: center;
 }
 
-/* SCHEDULE PAGE */
 
-body.schedule .container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
+/* SCHEDULE */
+body.schedule main {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.header-block h1 {
+    text-align: center;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 32px;
+    font-size: 50px;
 }
 
 body.schedule .content-block{
