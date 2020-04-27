@@ -78,3 +78,11 @@ span.time_task {
 span.time_task .single-icon svg {
     margin-right: 0px !important;
 }
+
+.footer-block>p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 29px;
+    font-weight: 500;
+    line-height: 20px;
+}
